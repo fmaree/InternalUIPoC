@@ -1,10 +1,5 @@
 @Library('jenkins-libraries') _
 
-def ENV_MAP = [
-    "dev":  [ "AccountId":"012345678900", "AssumeRoleName":"dev-jenkins-iam-role", "SessionName":"dev", "S3BucketName":"dev-cloudfront-origin-s3" ],
-    "uat":  [ "AccountId":"012345678999", "AssumeRoleName":"uat-jenkins-iam-role", "SessionName":"uat", "S3BucketName":"uat-cloudfront-origin-s3" ],
-    "nft":  [ "AccountId":"012345678922", "AssumeRoleName":"nft-jenkins-iam-role", "SessionName":"nft", "S3BucketName":"nft-cloudfront-origin-s3" ]
-]
 def CHILD_ELEMENTS = []
 def ALL_ELEMENTS = ['ALMOND', 'HAZEL', 'COCONUT']
 def PACKAGE_NAME = 'undefined'
