@@ -82,7 +82,7 @@ pipeline {
                     when {
                         allOf {
                             expression { params.ENVIRONMENT_NAME ==~ /(?i)(sit|uat)/ }
-                            expression { params.APPLICATION_REPO_BRANCH =~ /^release\/*/ }
+                            expression { params.APPLICATION_REPO_BRANCH =~ /^release\/\d+(\.\d+)?/ }
                         }
                     }
                     steps {
@@ -191,7 +191,7 @@ pipeline {
                     when {
                         allOf {
                             expression { params.ENVIRONMENT_NAME ==~ /(?i)(uat|nft)/ }
-                            expression { params.APPLICATION_REPO_BRANCH =~ /^release\/*/ }
+                            expression { params.APPLICATION_REPO_BRANCH =~ /^release\/\d+(\.\d+)?/ }
                         }
                     }
                     steps {
@@ -245,7 +245,7 @@ pipeline {
                     when {
                         allOf {
                             expression { params.ENVIRONMENT_NAME ==~ /(?i)(uat|nft)/ }
-                            expression { params.APPLICATION_REPO_BRANCH =~ /^release\/*/ }
+                            expression { params.APPLICATION_REPO_BRANCH =~ /^release\/\d+(\.\d+)?/ }
                         }
                     }
                     steps {
@@ -370,7 +370,7 @@ pipeline {
                     when {
                         allOf {
                             expression { params.ENVIRONMENT_NAME ==~ /(?i)(uat|nft)/ }
-                            expression { params.APPLICATION_REPO_BRANCH =~ /^release\/*/ }
+                            expression { params.APPLICATION_REPO_BRANCH =~ /^release\/\d+(\.\d+)?/ }
                         }
                     }
                     steps {
@@ -417,7 +417,7 @@ pipeline {
                     when {
                         allOf {
                             expression { params.ENVIRONMENT_NAME ==~ /(?i)(uat|nft)/ }
-                            expression { params.APPLICATION_REPO_BRANCH =~ /^release\/*/ }
+                            expression { params.APPLICATION_REPO_BRANCH =~ /^release\/\d+(\.\d+)?/ }
                         }
                     }
                     steps {
